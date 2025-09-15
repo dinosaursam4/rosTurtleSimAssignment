@@ -17,7 +17,7 @@ class TurtleController(Node):
         return msg
 
     def get_twist_msg(self):
-
+    # draws a diamond shape
         if self.time < 3:
             msg = self.create_twist(0.0, 0.8)
         elif self.time >= 5 and self.time < 10:
