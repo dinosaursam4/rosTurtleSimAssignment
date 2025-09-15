@@ -17,7 +17,7 @@ class TurtleController(Node):
         return msg
 
     def get_twist_msg(self):
-
+        # draws a rectangle: 2 long sides, 2 short sides, same angle turn
         if self.time < 5:
             msg = self.create_twist(1.0, 0.0)
         elif self.time >= 5 and self.time < 7:
